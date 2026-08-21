@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROS 2 — Nivel Avanzado — Francisco José Mañas Álvarez</title>
+<meta name="description" content="Curso avanzado de ROS 2 (UNED, 2027/28): temario, guía de estudio y repositorio de validación de ejercicios en GitHub.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="site-brand" href="../index.html">Francisco José Mañas Álvarez</a>
+    <nav class="site-nav">
+      <a href="../index.html">Inicio</a>
+      <a href="../sobre-mi.html">Sobre mí</a>
+      <a href="../cv.html">CV</a>
+      <a href="index.html" aria-current="page">Cursos</a>
+      <a href="../contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <p class="breadcrumb"><a href="index.html">Cursos</a> / ROS 2 — Nivel Avanzado</p>
+
+    <section class="section">
+      <span class="status-badge status-disponible">Curso 2027/28</span>
+      <h1 class="section-title">Robótica avanzada con ROS 2</h1>
+      <p>
+        Tercer y último curso del programa de Formación Permanente en ROS 2. Da por superados
+        Iniciación e Intermedio y lleva el mismo robot de reparto autónomo (<em>RobotDelivery</em>)
+        al límite: cerebro embebido con micro-ROS, manipulación con MoveIt 2, contenerización,
+        gemelo digital, flota conectada en la nube, percepción con IA y aprendizaje por refuerzo,
+        conectividad IoT, y evaluación y documentación reproducible del trabajo del robot.
+      </p>
+      <div class="button-row">
+        <a class="btn btn-primary" href="https://github.com/FranciscoJManasAlvarez/ros2-avanzado-uned" target="_blank" rel="noopener">Repositorio de prácticas en GitHub</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Temario</p>
+      <h2 class="section-title">Estructura del curso</h2>
+      <table class="temario">
+        <thead>
+          <tr><th>Tema</th><th>Título</th><th>Contenido de la práctica</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Un cerebro embebido</td><td>micro-ROS sobre microcontrolador (rclc, transporte serie/UDP)</td></tr>
+          <tr><td>2</td><td>Aprender a planificar</td><td>Manipulación del brazo con MoveIt 2 y MoveIt Task Constructor</td></tr>
+          <tr><td>3</td><td>Viajar en contenedores</td><td>Contenerización con Docker: multi-stage, multi-arquitectura, seguridad</td></tr>
+          <tr><td>4</td><td>Sombra y gemelo digital</td><td>Sincronización, detección de anomalías y validación de fidelidad</td></tr>
+          <tr><td>5</td><td>Una flota conectada</td><td>Panel web (rosbridge), coordinación de flota con Open-RMF, despliegue en contenedores</td></tr>
+          <tr><td>6</td><td>Ver y decidir por sí mismo</td><td>Clasificación con IA y aprendizaje por refuerzo (Gymnasium, Q-Learning)</td></tr>
+          <tr><td>7</td><td>Conectado al mundo IoT</td><td>MQTT y FIWARE (NGSI) para conectividad IoT</td></tr>
+          <tr><td>8</td><td>Documentar y evaluar</td><td>rosbag2, datos sintéticos y benchmarking reproducible</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Práctica verificable</p>
+      <h2 class="section-title">Repositorio de validación y demos</h2>
+      <div class="card">
+        <p>
+          El repositorio <a href="https://github.com/FranciscoJManasAlvarez/ros2-avanzado-uned" target="_blank" rel="noopener"><code>ros2-avanzado-uned</code></a>
+          contiene el paquete de validación automática de los 8 temas y paquetes de ejemplo/demo
+          para cada uno. Es un repositorio vivo: iré ampliando su documentación y contenido a lo
+          largo del curso.
+        </p>
+      </div>
+      <p class="note">
+        Este curso depende de infraestructura de terceros (micro-ROS, MoveIt Task Constructor,
+        Docker/Kubernetes, rosbridge, TensorFlow/Gymnasium, MQTT/FIWARE); los verificadores
+        correspondientes fallan con un diagnóstico claro si no están instalados. Los paquetes
+        propios de este curso usan el sufijo <code>_avanzado</code> (p. ej.
+        <code>tema1_practica_avanzado</code>) para poder convivir en el mismo workspace que los
+        del curso Intermedio, que reutilizan varios de sus ejercicios.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Francisco José Mañas Álvarez</span>
+    <span><a href="../contacto.html">fjmanas@dia.uned.es</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
