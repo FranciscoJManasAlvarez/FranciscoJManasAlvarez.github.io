@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROS 2 — Nivel Intermedio — Francisco José Mañas Álvarez</title>
+<meta name="description" content="Curso intermedio de ROS 2 (UNED, 2026/27): temario, guía de estudio y repositorio de validación de ejercicios en GitHub.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="site-brand" href="../index.html">Francisco José Mañas Álvarez</a>
+    <nav class="site-nav">
+      <a href="../index.html">Inicio</a>
+      <a href="../sobre-mi.html">Sobre mí</a>
+      <a href="../cv.html">CV</a>
+      <a href="index.html" aria-current="page">Cursos</a>
+      <a href="../contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <p class="breadcrumb"><a href="index.html">Cursos</a> / ROS 2 — Nivel Intermedio</p>
+
+    <section class="section">
+      <span class="status-badge status-disponible">Curso 2026/27</span>
+      <h1 class="section-title">ROS 2 intermedio: navegación autónoma y sistemas robóticos</h1>
+      <p>
+        Segundo curso del programa de Formación Permanente en ROS 2. Da por superados los
+        fundamentos de Iniciación y lleva el mismo robot de reparto autónomo
+        (<em>RobotDelivery</em>) a una arquitectura de producción: componentes y ciclo de vida,
+        árboles de comportamiento, TF2 y cinemática, localización, navegación autónoma con Nav2,
+        percepción, seguridad SROS2 y ajuste de QoS.
+      </p>
+      <div class="button-row">
+        <a class="btn btn-primary" href="https://github.com/FranciscoJManasAlvarez/ros2-intermedio-uned" target="_blank" rel="noopener">Repositorio de prácticas en GitHub</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Temario</p>
+      <h2 class="section-title">Estructura del curso</h2>
+      <table class="temario">
+        <thead>
+          <tr><th>Tema</th><th>Título</th><th>Contenido de la práctica</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Arquitectura avanzada</td><td>Componentes cargables, Lifecycle Nodes, callback groups y flota de robots</td></tr>
+          <tr><td>2</td><td>Un Behavior Tree para el robot de reparto</td><td>Árboles de comportamiento con BehaviorTree.CPP</td></tr>
+          <tr><td>3</td><td>El árbol de transformaciones del robot de reparto</td><td>TF2 estático y dinámico, robot_state_publisher, cinemática de un brazo de 2 GDL</td></tr>
+          <tr><td>4</td><td>El robot de reparto aprende dónde está</td><td>Fusión sensorial (EKF), SLAM y localización con AMCL</td></tr>
+          <tr><td>5</td><td>El robot de reparto navega de forma autónoma</td><td>Planificación, control local (DWB/TEB) y recuperación con Nav2</td></tr>
+          <tr><td>6</td><td>El robot de reparto aprende a ver</td><td>Percepción: cámara, cv_bridge, nubes de puntos, detección simple</td></tr>
+          <tr><td>7</td><td>El robot de reparto se protege</td><td>Seguridad con SROS2: keystore, enclaves y políticas de acceso</td></tr>
+          <tr><td>8</td><td>Ajustando la calidad de servicio</td><td>Perfiles de QoS, deadlines y medición de rendimiento</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Práctica verificable</p>
+      <h2 class="section-title">Repositorio de validación y demos</h2>
+      <div class="card">
+        <p>
+          El repositorio <a href="https://github.com/FranciscoJManasAlvarez/ros2-intermedio-uned" target="_blank" rel="noopener"><code>ros2-intermedio-uned</code></a>
+          contiene el paquete de validación automática de los 8 temas (un lanzador ROS 2 por
+          ejercicio) y paquetes de ejemplo/demo para cada tema. Es un repositorio vivo: iré
+          ampliando su documentación y contenido a lo largo del curso.
+        </p>
+      </div>
+      <p class="note">
+        Algunos ejercicios dependen de frameworks de terceros (BehaviorTree.CPP en el Tema 2,
+        TEB Local Planner en el Tema 5) que se documentan como requisito en el repositorio; los
+        verificadores correspondientes fallan con un diagnóstico claro si no están instalados.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Francisco José Mañas Álvarez</span>
+    <span><a href="../contacto.html">fjmanas@dia.uned.es</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
