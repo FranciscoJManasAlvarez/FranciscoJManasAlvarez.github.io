@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV — Francisco José Mañas Álvarez</title>
+<meta name="description" content="Formación académica, experiencia laboral, proyectos, publicaciones y docencia de Francisco José Mañas Álvarez.">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .toc { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.25rem 0 2.5rem; }
+  .toc a {
+    font-size: 0.85rem; font-weight: 600; color: var(--color-text-muted);
+    background: var(--color-accent-light); padding: 0.35rem 0.85rem; border-radius: 999px;
+  }
+  .toc a:hover { color: var(--color-accent); text-decoration: none; }
+  .entry { margin-bottom: 1.1rem; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-title { font-weight: 700; }
+  .entry-meta { color: var(--color-text-muted); font-size: 0.92rem; }
+  .pub-group { margin-top: 1.25rem; }
+  .pub-group h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="site-brand" href="index.html">Francisco José Mañas Álvarez</a>
+    <nav class="site-nav">
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="cv.html" aria-current="page">CV</a>
+      <a href="cursos/index.html">Cursos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <section class="section">
+      <p class="eyebrow">Currículum</p>
+      <h1 class="section-title">CV</h1>
+      <nav class="toc" aria-label="Secciones del CV">
+        <a href="#formacion">Formación académica</a>
+        <a href="#experiencia">Experiencia laboral</a>
+        <a href="#proyectos">Proyectos y contratos de I+D+i</a>
+        <a href="#publicaciones">Publicaciones</a>
+        <a href="#docencia">Docencia</a>
+      </nav>
+    </section>
+
+    <section class="section" id="formacion">
+      <h2 class="section-title">Formación académica</h2>
+      <div class="card">
+        <div class="entry">
+          <div class="entry-title">Doctorado en Ingeniería de Sistemas y Control</div>
+          <div class="entry-meta">UNED — 2023</div>
+          <p>Tesis: <em>«Development, control and evaluation of a heterogeneous multi-agent robotic platform»</em>.
+          Directoras: Dra. Raquel Dormido Canto y Dra. María Guinaldo Losada.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-title">Máster en Ingeniería de Sistemas y Control</div>
+          <div class="entry-meta">UNED — 2022</div>
+        </div>
+        <div class="entry">
+          <div class="entry-title">Máster en Ingeniería Industrial</div>
+          <div class="entry-meta">Universidad de Almería — 2019</div>
+        </div>
+        <div class="entry">
+          <div class="entry-title">Grado en Ingeniería Electrónica Industrial</div>
+          <div class="entry-meta">Universidad de Almería — 2017</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experiencia">
+      <h2 class="section-title">Experiencia laboral</h2>
+      <div class="card">
+        <div class="entry">
+          <div class="entry-title">Profesor Ayudante Doctor</div>
+          <div class="entry-meta">Departamento de Informática y Automática, ETSI Informática, UNED — actualidad</div>
+        </div>
+        <div class="entry">
+          <div class="entry-title">Grupo de investigación ISCO (Ingeniería de Sistemas y Control)</div>
+          <div class="entry-meta">UNED</div>
+        </div>
+        <div class="entry">
+          <div class="entry-title">Colaboración con el grupo ARM (Automation, Robotics and Mechatronics)</div>
+          <div class="entry-meta">Universidad de Almería — robótica móvil en invernaderos y divulgación científica</div>
+        </div>
+      </div>
+      <p class="note">Puestos anteriores pendientes de añadir — sección editable a mano en <code>cv.html</code>.</p>
+    </section>
+
+    <section class="section" id="proyectos">
+      <h2 class="section-title">Proyectos y contratos de I+D+i</h2>
+      <p class="note">
+        Sección en preparación. Añade aquí cada proyecto como un bloque
+        <code>&lt;div class="entry"&gt;</code> (título, entidad financiadora, referencia, años),
+        siguiendo el mismo patrón que «Formación académica».
+      </p>
+    </section>
+
+    <section class="section" id="publicaciones">
+      <h2 class="section-title">Publicaciones</h2>
+      <p>
+        Listado completo y actualizado en
+        <a href="https://orcid.org/0000-0003-2878-3011" target="_blank" rel="noopener">ORCID</a>.
+      </p>
+
+      <div class="pub-group">
+        <h3>Revistas</h3>
+        <p class="note">Sección en preparación.</p>
+      </div>
+
+      <div class="pub-group">
+        <h3>Congresos nacionales</h3>
+        <p class="note">Sección en preparación.</p>
+      </div>
+
+      <div class="pub-group">
+        <h3>Congresos internacionales</h3>
+        <p class="note">Sección en preparación.</p>
+      </div>
+    </section>
+
+    <section class="section" id="docencia">
+      <h2 class="section-title">Docencia</h2>
+      <div class="card">
+        <p>
+          Diseño y coordino el programa de <strong>Formación Permanente en ROS 2</strong> de la UNED,
+          una secuencia de tres cursos consecutivos (Iniciación, Intermedio y Avanzado) — ver la
+          <a href="cursos/index.html">sección de Cursos</a> para el detalle de cada uno.
+        </p>
+      </div>
+      <p class="note">Docencia reglada (grado/máster) y otras actividades pendientes de añadir aquí.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Francisco José Mañas Álvarez</span>
+    <span><a href="contacto.html">fjmanas@dia.uned.es</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
