@@ -378,3 +378,89 @@ main { padding: 3rem 0 4rem; }
   font-size: 0.92rem;
   color: var(--color-text);
 }
+
+/* ---------- Tabla de contenidos de página (Investigación, Docencia…) ---------- */
+
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.25rem 0 2.5rem;
+}
+
+.toc a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: var(--color-accent-light);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+}
+
+.toc a:hover { color: var(--color-accent); text-decoration: none; }
+
+/* ---------- Entradas tipo CV (formación, experiencia, proyectos…) ---------- */
+
+.entry { margin-bottom: 1.1rem; }
+.entry:last-child { margin-bottom: 0; }
+.entry-title { font-weight: 700; }
+.entry-meta { color: var(--color-text-muted); font-size: 0.92rem; }
+
+.pub-group { margin-top: 1.25rem; }
+.pub-group h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+
+/* ---------- Publicaciones con imagen (portada / graphical abstract) ---------- */
+
+.pub-card {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.pub-card .pub-thumb {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  border: 1px dashed var(--color-border);
+  background: var(--color-accent-light);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.pub-card .pub-thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+.pub-card .pub-title { font-weight: 700; margin-bottom: 0.2rem; }
+.pub-card .pub-meta { color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 0.3rem; }
+
+@media (max-width: 560px) {
+  .pub-card { grid-template-columns: 1fr; }
+  .pub-card .pub-thumb { width: 100%; height: 160px; }
+}
+
+/* ---------- Tarjetas genéricas en cuadrícula (Docencia, PFG/TFM…) ---------- */
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.item-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.item-card h3 { margin: 0; font-size: 1.05rem; }
+.item-card p { margin: 0; color: var(--color-text-muted); font-size: 0.92rem; }
