@@ -420,7 +420,8 @@ main { padding: 3rem 0 4rem; }
 
 .pub-card .pub-thumb {
   width: 140px;
-  height: 140px;
+  max-width: 140px;
+  height: auto;
   border-radius: 10px;
   border: 1px dashed var(--color-border);
   background: var(--color-accent-light);
@@ -434,7 +435,7 @@ main { padding: 3rem 0 4rem; }
   padding: 0.5rem;
 }
 
-.pub-card .pub-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.pub-card .pub-thumb img { display: block; width: 100%; height: auto; object-fit: contain; }
 
 .pub-card .pub-title { font-weight: 700; margin-bottom: 0.2rem; }
 .pub-card .pub-meta { color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 0.3rem; }
