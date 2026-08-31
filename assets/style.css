@@ -185,6 +185,8 @@ main { padding: 3rem 0 4rem; }
   font-size: 1.05rem;
   color: var(--color-text);
   max-width: 46ch;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .hero-photo {
