@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROS 2 — Advanced Level — Francisco José Mañas Álvarez</title>
+<meta name="description" content="Advanced ROS 2 course (UNED, 2027/28): syllabus, study guide and exercise-validation repository on GitHub.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="site-brand" href="../index_en.html">Francisco José Mañas Álvarez</a>
+    <div class="nav-wrap">
+      <nav class="site-nav">
+        <a href="../index_en.html">Home</a>
+        <a href="../sobre-mi_en.html">About me</a>
+        <a href="../investigacion_en.html">Research</a>
+        <a href="../publicaciones_en.html">Publications</a>
+        <a href="../docencia_en.html" aria-current="page">Teaching</a>
+        <a href="../contacto_en.html">Contact</a>
+      </nav>
+      <div class="lang-switch">
+        <a href="avanzado.html" hreflang="es">Español</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <p class="breadcrumb"><a href="../docencia_en.html#formacion-permanente">Teaching</a> / ROS 2 — Advanced Level</p>
+
+    <section class="section">
+      <span class="status-badge status-disponible">2027/28 course</span>
+      <h1 class="section-title">Advanced robotics with ROS 2</h1>
+      <p>
+        Third and final course of the ROS 2 Continuing Education program. It assumes
+        Introduction and Intermediate have been mastered and pushes the same autonomous delivery robot (<em>RobotDelivery</em>)
+        to its limits: an embedded brain with micro-ROS, manipulation with MoveIt 2, containerization,
+        digital twin, cloud-connected fleet, AI perception and reinforcement learning,
+        IoT connectivity, and reproducible evaluation and documentation of the robot's work.
+      </p>
+      <div class="button-row">
+        <a class="btn btn-primary" href="https://github.com/FranciscoJManasAlvarez/ros2-avanzado-uned" target="_blank" rel="noopener">Practice repository on GitHub</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Syllabus</p>
+      <h2 class="section-title">Course structure</h2>
+      <table class="temario">
+        <thead>
+          <tr><th>Topic</th><th>Title</th><th>Practical content</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>An embedded brain</td><td>micro-ROS on a microcontroller (rclc, serial/UDP transport)</td></tr>
+          <tr><td>2</td><td>Learning to plan</td><td>Arm manipulation with MoveIt 2 and MoveIt Task Constructor</td></tr>
+          <tr><td>3</td><td>Traveling in containers</td><td>Containerization with Docker: multi-stage, multi-architecture, security</td></tr>
+          <tr><td>4</td><td>Shadow and digital twin</td><td>Synchronization, anomaly detection and fidelity validation</td></tr>
+          <tr><td>5</td><td>A connected fleet</td><td>Web dashboard (rosbridge), fleet coordination with Open-RMF, containerized deployment</td></tr>
+          <tr><td>6</td><td>Seeing and deciding on its own</td><td>AI-based classification and reinforcement learning (Gymnasium, Q-Learning)</td></tr>
+          <tr><td>7</td><td>Connected to the IoT world</td><td>MQTT and FIWARE (NGSI) for IoT connectivity</td></tr>
+          <tr><td>8</td><td>Documenting and evaluating</td><td>rosbag2, synthetic data and reproducible benchmarking</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Verifiable practice</p>
+      <h2 class="section-title">Validation and demo repository</h2>
+      <div class="card">
+        <p>
+          The <a href="https://github.com/FranciscoJManasAlvarez/ros2-avanzado-uned" target="_blank" rel="noopener"><code>ros2-avanzado-uned</code></a> repository
+          contains the automatic validation package for all 8 topics and example/demo packages
+          for each one. It is a living repository: I will keep expanding its documentation and content
+          throughout the course.
+        </p>
+      </div>
+      <p class="note">
+        This course depends on third-party infrastructure (micro-ROS, MoveIt Task Constructor,
+        Docker/Kubernetes, rosbridge, TensorFlow/Gymnasium, MQTT/FIWARE); the corresponding
+        validators fail with a clear diagnostic message if they are not installed. The packages
+        specific to this course use the <code>_avanzado</code> suffix (e.g.
+        <code>tema1_practica_avanzado</code>) so they can coexist in the same workspace as those
+        from the Intermediate course, which reuses several of its exercises.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Francisco José Mañas Álvarez</span>
+    <span><a href="../contacto_en.html">fjmanas@dia.uned.es</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
